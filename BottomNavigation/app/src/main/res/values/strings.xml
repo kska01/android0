@@ -3,4 +3,6 @@
     <string name="menu">메뉴</string>
     <string name="cart">장바구니</string>
     <string name="my100">나의백년</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
