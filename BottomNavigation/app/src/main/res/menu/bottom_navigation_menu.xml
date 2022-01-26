@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu"
+        android:enabled="true"
+        android:icon="@drawable/menu"
+        android:title="@string/menu" />
+    <item
+        android:id="@+id/cart"
+        android:enabled="true"
+        android:icon="@drawable/cart"
+        android:title="@string/cart" />
+    <item
+        android:id="@+id/my100"
+        android:enabled="true"
+        android:icon="@drawable/my100"
+        android:title="@string/my100"  />
+
+</menu>
