@@ -14,14 +14,31 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+        setFragment(menuFragment)
+
+//        BottomNavigationView.OnNavigationItemSelectedListener { item ->
+//            when(item.itemId) {
+//                R.id.menu -> {
+//                    setFragment(menuFragment)
+//                    true
+//                }
+//                R.id.cart -> {
+//                    setFragment(cartFragment)
+//                    true
+//                }
+//                R.id.my100 -> {
+//                    setFragment(my100Fragment)
+//                    true
+//                }
+//                else -> false
+//            }
+//        }
     }
 
-
-
-    private fun changeFragment(fragment: Fragment) {
-        supportFragmentManager
-            .beginTransaction()
-            .replace(R.id.frameLayout, fragment)
-            .commit()
+    fun setFragment(fragment: Fragment) {
+        val transaction = supportFragmentManager.beginTransaction()
+        transaction.add(R.id.frameLayout, menuFragment)
+        transaction.commit()
     }
 }
