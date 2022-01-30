@@ -17,6 +17,8 @@ class MainActivity : AppCompatActivity() {
 
         setFragment(menuFragment)
 
+        menuFragment.selectedItemId = R.id.menu
+
 //        BottomNavigationView.OnNavigationItemSelectedListener { item ->
 //            when(item.itemId) {
 //                R.id.menu -> {
