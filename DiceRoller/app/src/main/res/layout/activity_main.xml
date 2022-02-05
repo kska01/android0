@@ -34,4 +34,13 @@
         app:layout_constraintStart_toStartOf="parent"
         tools:layout_editor_absoluteY="104dp" />
 
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="145dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
