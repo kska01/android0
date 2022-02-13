@@ -19,4 +19,13 @@ class MainActivity : AppCompatActivity() {
         Log.d(TAG, "DEBUG: reporting technical information useful for debugging")
         Log.v(TAG, "VERBOSE: more verbose than DEBUG logs")
     }
+
+    fun division() {
+        val numerator = 60
+        var denominator = 4
+        repeat(5) {
+            Log.v(TAG, "${numerator / denominator}")
+            denominator--
+        }
+    }
 }
