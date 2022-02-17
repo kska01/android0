@@ -14,7 +14,7 @@ class MainActivity : AppCompatActivity() {
         Log.d(TAG, "this is where the app crashed before")
         val helloTextView: TextView = findViewById(R.id.division_textview)
         Log.d(TAG, "this should be logged if the bug is fixed")
-        helloTextView.text = "Hello, debugging!"
+        helloTextView.text = "Hello, debugging!!"
         logging()
         division()
     }
