@@ -67,10 +67,11 @@ class MainActivity : AppCompatActivity() {
         setViewElements()
         lemonImage!!.setOnClickListener {
             // TODO: call the method that handles the state when the image is clicked
+            clickLemonImage()
         }
         lemonImage!!.setOnLongClickListener {
             // TODO: replace 'false' with a call to the function that shows the squeeze count
-            false
+            showSnackbar()
         }
     }
 
@@ -111,6 +112,25 @@ class MainActivity : AppCompatActivity() {
 
         // TODO: lastly, before the function terminates we need to set the view elements so that the
         //  UI can reflect the correct state
+
+        when (lemonadeState) {
+            "select" -> {
+                lemonadeState = "$SQUEEZE"
+                lemonSize = LemonTree().pick()
+                squeezeCount = 0 }
+            "squeeze" -> {
+                squeezeCount++
+                lemonSize--
+                if (lemonSize == 0) {
+                    lemonadeState = "$DRINK"
+                    lemonSize = -1
+                }}
+            "drink" -> {
+                lemonadeState = "$RESTART" }
+            "restart" -> {
+                lemonadeState = "$SELECT" }
+        }
+        setViewElements()
     }
 
     /**
@@ -126,6 +146,25 @@ class MainActivity : AppCompatActivity() {
         // TODO: Additionally, for each state, the lemonImage should be set to the corresponding
         //  drawable from the drawable resources. The drawables have the same names as the strings
         //  but remember that they are drawables, not strings.
+
+        when (lemonadeState) {
+            "select" -> {
+                textAction.setText(R.string.lemon_select)
+                lemonImage!!.setImageResource(R.drawable.lemon_tree)
+            }
+            "squeeze" -> {
+                textAction.setText(R.string.lemon_squeeze)
+                lemonImage!!.setImageResource(R.drawable.lemon_squeeze)
+            }
+            "drink" -> {
+                textAction.setText(R.string.lemon_drink)
+                lemonImage!!.setImageResource(R.drawable.lemon_drink)
+            }
+            "restart" -> {
+                textAction.setText(R.string.lemon_empty_glass)
+                lemonImage!!.setImageResource(R.drawable.lemon_restart)
+            }
+        }
     }
 
     /**
