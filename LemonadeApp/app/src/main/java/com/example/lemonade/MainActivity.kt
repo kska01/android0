@@ -117,18 +117,22 @@ class MainActivity : AppCompatActivity() {
             "select" -> {
                 lemonadeState = "$SQUEEZE"
                 lemonSize = LemonTree().pick()
-                squeezeCount = 0 }
+                squeezeCount = 0
+            }
             "squeeze" -> {
                 squeezeCount++
                 lemonSize--
                 if (lemonSize == 0) {
                     lemonadeState = "$DRINK"
                     lemonSize = -1
-                }}
+                }
+            }
             "drink" -> {
-                lemonadeState = "$RESTART" }
+                lemonadeState = "$RESTART"
+            }
             "restart" -> {
-                lemonadeState = "$SELECT" }
+                lemonadeState = "$SELECT"
+            }
         }
         setViewElements()
     }
