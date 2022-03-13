@@ -11,7 +11,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        // Initailize Data.
+        // Initialize Data.
         val myDataset = Datasource().loadAffirmations()
 
         val recyclerview = findViewById<RecyclerView>(R.id.recycler_view)
