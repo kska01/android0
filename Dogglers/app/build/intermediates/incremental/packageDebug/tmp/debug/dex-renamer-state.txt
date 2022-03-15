@@ -1,4 +1,4 @@
-#Tue Mar 15 18:19:16 KST 2022
+#Tue Mar 15 23:00:29 KST 2022
 base.1=/home/ka/Android0/Dogglers/app/build/intermediates/dex/debug/mergeProjectDexDebug/classes.dex
 path.1=classes.dex
 base.0=/home/ka/Android0/Dogglers/app/build/intermediates/dex/debug/mergeExtDexDebug/classes.dex
