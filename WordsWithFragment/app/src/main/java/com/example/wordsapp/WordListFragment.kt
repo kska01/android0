@@ -31,16 +31,12 @@ class WordListFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         val recyclerView = binding.recyclerView
-        val letterId = activity?.intent?.extras?.getString(DetailActivity.LETTER).toString()
-        recyclerView.layoutManager = LinearLayoutManager(context)
-        recyclerView.adapter = WordAdapter(letterId, this)
+        recyclerView.layoutManager = LinearLayoutManager(requireContext())
+        recyclerView.adapter = WordAdapter(activity?.intent?.extras?.getString(LETTER).toString(), requireContext())
 
         recyclerView.addItemDecoration(
             DividerItemDecoration(context, DividerItemDecoration.VERTICAL)
         )
-
-
-        super.onViewCreated(view, savedInstanceState)
     }
 
     override fun onDestroyView() {
