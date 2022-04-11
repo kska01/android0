@@ -9,14 +9,16 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.affirmationsreview.R
 import com.example.affirmationsreview.model.Affirmation
 
-class ItemAdapter(private val context: Context, val dataset: List<Affirmation>) : RecyclerView.Adapter<ItemAdapter.ItemViewHolder>() {
+class ItemAdapter(private val context: Context, private val dataset: List<Affirmation>) :
+    RecyclerView.Adapter<ItemAdapter.ItemViewHolder>() {
 
     class ItemViewHolder(private val view: View) : RecyclerView.ViewHolder(view) {
         val textView: TextView = view.findViewById(R.id.item_title)
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ItemViewHolder {
-        val adapterLayout = LayoutInflater.from(parent.context).inflate(R.layout.list_item, parent, false)
+        val adapterLayout =
+            LayoutInflater.from(parent.context).inflate(R.layout.list_item, parent, false)
         return ItemViewHolder(adapterLayout)
     }
 
