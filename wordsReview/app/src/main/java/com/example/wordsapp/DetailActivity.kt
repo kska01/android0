@@ -21,8 +21,11 @@ import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.wordsapp.databinding.ActivityDetailBinding
 
-
 class DetailActivity : AppCompatActivity() {
+
+    companion object {
+        const val LETTER = "letter"
+    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
