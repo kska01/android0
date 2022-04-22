@@ -27,6 +27,8 @@ import androidx.core.app.ShareCompat
 import androidx.databinding.DataBindingUtil
 import com.example.android.dessertclicker.databinding.ActivityMainBinding
 
+const val TAG = "MainActivity"
+
 class MainActivity : AppCompatActivity() {
 
     private var revenue = 0
