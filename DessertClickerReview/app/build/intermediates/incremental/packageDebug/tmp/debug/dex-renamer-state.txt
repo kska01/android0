@@ -1,4 +1,4 @@
-#Sat Apr 23 17:15:01 KST 2022
+#Tue Apr 26 23:52:13 KST 2022
 base.0=/home/ka/Android0/DessertClickerReview/app/build/intermediates/dex/debug/mergeDexDebug/classes.dex
 renamed.0=classes.dex
 path.0=classes.dex
