@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/home/ka/Downloads/android-basics-kotlin-dogglers-app-main/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-hdpi-v4/values-hdpi-v4.xml",
+            "outputFile": "com.example.dogglers.app-mergeDebugResources-19:/values-hdpi-v4/values-hdpi-v4.xml",
             "map": [
                 {
-                    "source": "/home/ka/.gradle/caches/transforms-3/a11c37ec3ec3b8b848a9f54ba06e1ac5/transformed/appcompat-1.2.0/res/values-hdpi-v4/values-hdpi-v4.xml",
+                    "source": "/home/ka/.gradle/caches/transforms-3/e89d1b3bfa5e85af2227e8718db9af1a/transformed/appcompat-1.2.0/res/values-hdpi-v4/values-hdpi-v4.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

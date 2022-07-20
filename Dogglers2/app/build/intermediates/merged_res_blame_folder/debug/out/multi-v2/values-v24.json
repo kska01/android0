@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/home/ka/Downloads/android-basics-kotlin-dogglers-app-main/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v24/values-v24.xml",
+            "outputFile": "com.example.dogglers.app-mergeDebugResources-19:/values-v24/values-v24.xml",
             "map": [
                 {
-                    "source": "/home/ka/.gradle/caches/transforms-3/a11c37ec3ec3b8b848a9f54ba06e1ac5/transformed/appcompat-1.2.0/res/values-v24/values-v24.xml",
+                    "source": "/home/ka/.gradle/caches/transforms-3/e89d1b3bfa5e85af2227e8718db9af1a/transformed/appcompat-1.2.0/res/values-v24/values-v24.xml",
                     "from": {
                         "startLines": "2,3",
                         "startColumns": "4,4",
@@ -14,7 +14,7 @@
                     }
                 },
                 {
-                    "source": "/home/ka/.gradle/caches/transforms-3/0a1957f2eabbf0964997eb711390670f/transformed/media-1.0.0/res/values-v24/values-v24.xml",
+                    "source": "/home/ka/.gradle/caches/transforms-3/638b9c88142838102ca56d6fc6868553/transformed/media-1.0.0/res/values-v24/values-v24.xml",
                     "from": {
                         "startLines": "2,3,4,5",
                         "startColumns": "4,4,4,4",
