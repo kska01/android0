@@ -1,0 +1,13 @@
+#Thu Jul 21 10:09:35 KST 2022
+path.3=13/classes.dex
+path.2=12/classes.dex
+path.1=0/classes.dex
+path.0=classes.dex
+base.3=/home/ka/Android0/Dogglers2/app/build/intermediates/dex/debugAndroidTest/mergeProjectDexDebugAndroidTest/13/classes.dex
+base.2=/home/ka/Android0/Dogglers2/app/build/intermediates/dex/debugAndroidTest/mergeProjectDexDebugAndroidTest/12/classes.dex
+base.1=/home/ka/Android0/Dogglers2/app/build/intermediates/dex/debugAndroidTest/mergeProjectDexDebugAndroidTest/0/classes.dex
+base.0=/home/ka/Android0/Dogglers2/app/build/intermediates/dex/debugAndroidTest/mergeExtDexDebugAndroidTest/classes.dex
+renamed.3=classes4.dex
+renamed.2=classes3.dex
+renamed.1=classes2.dex
+renamed.0=classes.dex

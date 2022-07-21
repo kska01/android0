@@ -32,7 +32,7 @@ import com.example.dogglers.data.DataSource
 class DogCardAdapter(
     private val context: Context?,
     private val layout: Int
-): RecyclerView.Adapter<DogCardAdapter.DogCardViewHolder>() {
+) : RecyclerView.Adapter<DogCardAdapter.DogCardViewHolder>() {
 
     // TODO: Initialize the data using the List found in data/DataSource
     private val data = DataSource.dogs
@@ -40,7 +40,7 @@ class DogCardAdapter(
     /**
      * Initialize view elements
      */
-    class DogCardViewHolder(view: View?): RecyclerView.ViewHolder(view!!) {
+    class DogCardViewHolder(view: View?) : RecyclerView.ViewHolder(view!!) {
         // TODO: Declare and initialize all of the list item UI components
         val dogImage = view?.findViewById<ImageView>(R.id.dog_image)
         val dogName = view?.findViewById<TextView>(R.id.dog_name)
@@ -48,7 +48,10 @@ class DogCardAdapter(
         val dogHobby = view?.findViewById<TextView>(R.id.dog_hobby)
     }
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): DogCardAdapter.DogCardViewHolder {
+    override fun onCreateViewHolder(
+        parent: ViewGroup,
+        viewType: Int
+    ): DogCardAdapter.DogCardViewHolder {
         // TODO: Use a conditional to determine the layout type and set it accordingly.
         //  if the layout variable is Layout.GRID the grid list item should be used. Otherwise the
         //  the vertical/horizontal list item should be used.
