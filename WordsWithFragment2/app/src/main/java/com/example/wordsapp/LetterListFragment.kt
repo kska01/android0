@@ -19,7 +19,7 @@ class LetterListFragment : Fragment() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setHasOptionsMenu(true)
+        setHasOptionsMenu(true)   // To display the options menu.
     }
 
     override fun onCreateView(
@@ -28,8 +28,8 @@ class LetterListFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         _binding = FragmentLetterListBinding.inflate(inflater, container, false)
-        val view = binding.root
-        return view
+
+        return binding.root
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
