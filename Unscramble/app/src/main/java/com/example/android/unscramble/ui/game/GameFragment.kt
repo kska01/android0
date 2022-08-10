@@ -68,7 +68,7 @@ class GameFragment : Fragment() {
 
         // Setup a click listener for the Submit and Skip buttons.
         binding.submit.setOnClickListener { onSubmitWord() }
-        binding.skip.setOnClickListener { onSkipWord() }z
+        binding.skip.setOnClickListener { onSkipWord() }
     }
 
     override fun onDetach() {
