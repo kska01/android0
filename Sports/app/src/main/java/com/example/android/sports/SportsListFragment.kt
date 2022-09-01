@@ -48,6 +48,9 @@ class SportsListFragment : Fragment() {
             slidingPaneLayout.closePane()
         }
 
+        // PanelSlideListener 를 상속 받은 후 SportsListOnBackPressedCallback class overriding
+        // 이 method 들은 second pane 의 상태를 monitoring 하는 것이다. 상태에 따라서 OnBackPressedCallback
+        // class 에 그 상태를 addPanelSlideListener class 를 통해 전달한다.
         override fun onPanelSlide(panel: View, slideOffset: Float) {
         }
 
@@ -73,6 +76,9 @@ class SportsListFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         val binding = FragmentSportsListBinding.bind(view)
         val slidingPaneLayout = binding.slidingPaneLayout
+
+        // Lock mode
+        slidingPaneLayout.lockMode = SlidingPaneLayout.LOCK_MODE_LOCKED
 
         // Connect the SlidingPaneLayout to the system back button.
         requireActivity().onBackPressedDispatcher.addCallback(
