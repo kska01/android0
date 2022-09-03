@@ -8,10 +8,6 @@
         "source": "/home/ka/.gradle/daemon/7.4.2/com.example.lunchtray.app-main-49:/layout/fragment_checkout.xml"
     },
     {
-        "merged": "com.example.lunchtray.app-mergeDebugResources-46:/layout/fragment_entree_menu.xml",
-        "source": "com.example.lunchtray.app-main-49:/layout/fragment_entree_menu.xml"
-    },
-    {
         "merged": "/home/ka/.gradle/daemon/7.4.2/com.example.lunchtray.app-mergeDebugResources-46:/layout/fragment_side_menu.xml",
         "source": "/home/ka/.gradle/daemon/7.4.2/com.example.lunchtray.app-main-49:/layout/fragment_side_menu.xml"
     },
@@ -26,5 +22,9 @@
     {
         "merged": "/home/ka/.gradle/daemon/7.4.2/com.example.lunchtray.app-mergeDebugResources-46:/layout/fragment_entree_menu.xml",
         "source": "/home/ka/.gradle/daemon/7.4.2/com.example.lunchtray.app-main-49:/layout/fragment_entree_menu.xml"
+    },
+    {
+        "merged": "com.example.lunchtray.app-mergeDebugResources-46:/layout/fragment_checkout.xml",
+        "source": "com.example.lunchtray.app-main-49:/layout/fragment_checkout.xml"
     }
 ]

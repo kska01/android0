@@ -32,20 +32,20 @@
         "source": "/home/ka/.gradle/daemon/7.4.2/com.example.lunchtray.app-main-49:/mipmap-anydpi-v26/ic_launcher.xml"
     },
     {
-        "merged": "/home/ka/.gradle/daemon/7.4.2/com.example.lunchtray.app-merged_res-47:/drawable_ic_launcher_foreground.xml.flat",
-        "source": "/home/ka/.gradle/daemon/7.4.2/com.example.lunchtray.app-main-49:/drawable/ic_launcher_foreground.xml"
-    },
-    {
         "merged": "/home/ka/.gradle/daemon/7.4.2/com.example.lunchtray.app-merged_res-47:/layout_fragment_accompaniment_menu.xml.flat",
         "source": "/home/ka/.gradle/daemon/7.4.2/com.example.lunchtray.app-main-49:/layout/fragment_accompaniment_menu.xml"
+    },
+    {
+        "merged": "/home/ka/.gradle/daemon/7.4.2/com.example.lunchtray.app-merged_res-47:/drawable_ic_launcher_foreground.xml.flat",
+        "source": "/home/ka/.gradle/daemon/7.4.2/com.example.lunchtray.app-main-49:/drawable/ic_launcher_foreground.xml"
     },
     {
         "merged": "/home/ka/.gradle/daemon/7.4.2/com.example.lunchtray.app-merged_res-47:/layout_fragment_checkout.xml.flat",
         "source": "/home/ka/.gradle/daemon/7.4.2/com.example.lunchtray.app-main-49:/layout/fragment_checkout.xml"
     },
     {
-        "merged": "com.example.lunchtray.app-merged_res-47:/layout_fragment_entree_menu.xml.flat",
-        "source": "com.example.lunchtray.app-main-49:/layout/fragment_entree_menu.xml"
+        "merged": "com.example.lunchtray.app-merged_res-47:/layout_fragment_checkout.xml.flat",
+        "source": "com.example.lunchtray.app-main-49:/layout/fragment_checkout.xml"
     },
     {
         "merged": "/home/ka/.gradle/daemon/7.4.2/com.example.lunchtray.app-merged_res-47:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
