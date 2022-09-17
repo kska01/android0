@@ -13,6 +13,14 @@ private val retrofit = Retrofit.Builder()
     .build()
 
 interface MarsApiService {
+    // Retrofit 에게 GET 요청임을 알려주기 위해 @GET annotation 을 사용한다. 그리고 endpoint 로
+    // "photos" 를 명시한다.
     @GET("photos")
-    fun getPhotos(): String
+    suspend fun getPhotos(): String
+}
+
+object MarsApi {
+    val retrofitService : MarsApiService by lazy {
+        retrofit.create(MarsApiService::class.java)
+    }
 }
