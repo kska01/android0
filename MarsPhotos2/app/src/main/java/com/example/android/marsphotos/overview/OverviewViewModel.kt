@@ -16,11 +16,9 @@
 
 package com.example.android.marsphotos.overview
 
-import androidx.lifecycle.LiveData
-import androidx.lifecycle.MutableLiveData
-import androidx.lifecycle.ViewModel
-import androidx.lifecycle.viewModelScope
+import androidx.lifecycle.*
 import com.example.android.marsphotos.network.MarsApi
+import com.example.android.marsphotos.network.MarsPhoto
 import kotlinx.coroutines.launch
 
 /**
@@ -33,6 +31,10 @@ class OverviewViewModel : ViewModel() {
 
     // The external immutable LiveData for the request status
     val status: LiveData<String> = _status
+
+    private val _photos = MutableLiveData<List<MarsPhoto>>()
+    val photos: LiveData<List<MarsPhoto>> = _photos
+
     /**
      * Call getMarsPhotos() on init so we can display status immediately.
      */
@@ -47,8 +49,8 @@ class OverviewViewModel : ViewModel() {
     private fun getMarsPhotos() {
         viewModelScope.launch {
             try {
-                val listResult = MarsApi.retrofitService.getPhotos()
-                _status.value = listResult
+                _photos.value = MarsApi.retrofitService.getPhotos()
+                _status.value = "Success: Mars properties retrieved"
             } catch (e: Exception) {
                 _status.value = "Failure: ${e.message}"
             }
