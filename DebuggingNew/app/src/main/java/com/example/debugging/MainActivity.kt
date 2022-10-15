@@ -7,6 +7,7 @@ import android.util.Log
 public val TAG = "MainActivity"
 
 class MainActivity : AppCompatActivity() {
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
