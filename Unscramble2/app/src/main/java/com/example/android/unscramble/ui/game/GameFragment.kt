@@ -67,22 +67,24 @@ class GameFragment : Fragment() {
         // Setup a click listener for the Submit and Skip buttons.
         binding.submit.setOnClickListener { onSubmitWord() }
         binding.skip.setOnClickListener { onSkipWord() }
-        // Update the UI with observe
-        viewModel.score.observe(viewLifecycleOwner
-        ) { newScore ->
-            binding.score.text = getString(R.string.score, newScore)
-        }
 
-        viewModel.currentWordCount.observe(viewLifecycleOwner,
-        ) { newWordCount ->
-            binding.wordCount.text = getString(R.string.word_count, newWordCount, MAX_NO_OF_WORDS)
-        }
+        // Update the UI with observe
+        // dataBinding 과 binding expression 을 사용하면 필요없음.
+//        viewModel.score.observe(viewLifecycleOwner
+//        ) { newScore ->
+//            binding.score.text = getString(R.string.score, newScore)
+//        }
+
+//        viewModel.currentWordCount.observe(viewLifecycleOwner,
+//        ) { newWordCount ->
+//            binding.wordCount.text = getString(R.string.word_count, newWordCount, MAX_NO_OF_WORDS)
+//        }
 
         // Observe the currentScrambledWord LiveData.
-        viewModel.currentScrambleWord.observe(viewLifecycleOwner
-        ) { newWord ->
-            binding.textViewUnscrambledWord.text = newWord
-        }
+//        viewModel.currentScrambleWord.observe(viewLifecycleOwner
+//        ) { newWord ->
+//            binding.textViewUnscrambledWord.text = newWord
+//        }
     }
 
 
@@ -116,15 +118,6 @@ class GameFragment : Fragment() {
     }
 
     /*
-     * Gets a random word for the list of words and shuffles the letters in it.
-     */
-    private fun getNextScrambledWord(): String {
-        val tempWord = allWordsList.random().toCharArray()
-        tempWord.shuffle()
-        return String(tempWord)
-    }
-
-    /*
      * Re-initializes the data in the ViewModel and updates the views with the new data, to
      * restart the game.
      */
@@ -138,11 +131,6 @@ class GameFragment : Fragment() {
      */
     private fun exitGame() {
         activity?.finish()
-    }
-
-    override fun onDetach() {
-        super.onDetach()
-        Log.d("GameFragment", "GameFragment destroyed!")
     }
 
     /*

@@ -71,9 +71,4 @@ class GameViewModel : ViewModel() {
         wordsList.clear()
         getNextWord()
     }
-
-    override fun onCleared() {
-        super.onCleared()
-        Log.d("GameFragment", "GameViewModel destroyed!")
-    }
 }
