@@ -57,18 +57,18 @@ class LetterListFragment : Fragment() {
     /**
      * Sets the LayoutManager for the [RecyclerView] based on the desired orientation of the list.
      */
-//    private fun chooseLayout() {
-//        if (isLinearLayoutManager) {
-//            recyclerView.layoutManager = LinearLayoutManager(context)
-//        } else {
-//            recyclerView.layoutManager = GridLayoutManager(context, 4)
-//        }
-//        recyclerView.adapter = LetterAdapter()
-//    }
-//
-//    private fun setIcon(menuItem: MenuItem?) {
-//        if (menuItem == null)
-//            return
+    private fun chooseLayout() {
+        if (isLinearLayoutManager) {
+            recyclerView.layoutManager = LinearLayoutManager(context)
+        } else {
+            recyclerView.layoutManager = GridLayoutManager(context, 4)
+        }
+        recyclerView.adapter = LetterAdapter()
+    }
+
+    private fun setIcon(menuItem: MenuItem?) {
+        if (menuItem == null)
+            return
 
         // Set the drawable for the menu icon based on which LayoutManager is currently in use
 
