@@ -39,8 +39,11 @@ class WordListFragment : Fragment() {
 
         recyclerView = binding.recyclerView
         recyclerView.apply {
-            layoutManager = LinearLayoutManager(context)
-            adapter = WordAdapter(letterId, context)
+            layoutManager = LinearLayoutManager(requireContext())
+            adapter = WordAdapter(
+                activity?.intent?.extras?.getString(LETTER).toString(),
+                requireContext()
+            )
             addItemDecoration(
                 DividerItemDecoration(context, DividerItemDecoration.VERTICAL)
             )
