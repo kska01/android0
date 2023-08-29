@@ -23,9 +23,13 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.firebase.ui.auth.AuthUI
 import com.firebase.ui.auth.AuthUI.IdpConfig.*
-import com.google.firebase.codelab.friendlychat.BuildConfig
+import com.firebase.ui.auth.BuildConfig
+import com.google.firebase.auth.ktx.auth
 import com.google.firebase.codelab.friendlychat.databinding.ActivityMainBinding
+import com.google.firebase.database.ktx.database
+import com.google.firebase.ktx.Firebase
 import com.google.firebase.storage.StorageReference
+import com.google.firebase.storage.ktx.storage
 
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
@@ -61,6 +65,16 @@ class MainActivity : AppCompatActivity() {
         // When the image button is clicked, launch the image picker
         binding.addMessageImageView.setOnClickListener {
             openDocument.launch(arrayOf("image/*"))
+        }
+
+        // When running in debug mode, connect to the Firebase Emulator Suite.
+        // "10.0.2.2" is a special IP address which allows the Android Emulator
+        // to connect to "localhost" on the host computer. The port values (9xxx)
+        // must match the values defined in the firebase.json file.
+        if (BuildConfig.DEBUG) {
+            Firebase.database.useEmulator("10.0.2.2", 9000)
+            Firebase.auth.useEmulator("10.0.2.2", 9099)
+            Firebase.storage.useEmulator("10.0.2.2", 9199)
         }
     }
 
