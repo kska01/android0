@@ -56,7 +56,7 @@ dependencies {
     implementation("androidx.core:core-ktx:1.10.1")
 
     // Google Sign In SDK
-    implementation("com.google.android.gms:play-services-auth:20.6.0")
+    implementation("com.google.android.gms:play-services-auth:20.7.0")
 
     // Firebase SDK
     implementation(platform("com.google.firebase:firebase-bom:32.2.3"))
